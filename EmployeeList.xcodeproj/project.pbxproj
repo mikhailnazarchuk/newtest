@@ -19,6 +19,7 @@
 		0BF8A9DB279C40D300846568 /* EmployeeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8A9DA279C40D300846568 /* EmployeeResponse.swift */; };
 		0BF8A9DD279C499200846568 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8A9DC279C499200846568 /* ApiClient.swift */; };
 		0BF8A9DF279C4FC300846568 /* EmployeesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8A9DE279C4FC300846568 /* EmployeesViewModel.swift */; };
+		1763E40327B7F75600D37E45 /* AddEmployeesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1763E40227B7F75600D37E45 /* AddEmployeesViewModel.swift */; };
 		660AAC0885D890EA57266DAF /* Pods_EmployeeList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C379D44583F36B69AA5B431 /* Pods_EmployeeList.framework */; };
 		CDDA570927B7F83F0034EBA4 /* EmployeeListNewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDA570827B7F83F0034EBA4 /* EmployeeListNewController.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		0BF8A9DA279C40D300846568 /* EmployeeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeResponse.swift; sourceTree = "<group>"; };
 		0BF8A9DC279C499200846568 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		0BF8A9DE279C4FC300846568 /* EmployeesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesViewModel.swift; sourceTree = "<group>"; };
+		1763E40227B7F75600D37E45 /* AddEmployeesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeesViewModel.swift; sourceTree = "<group>"; };
 		479229B66EB37781C4E065BA /* Pods-EmployeeList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmployeeList.release.xcconfig"; path = "Target Support Files/Pods-EmployeeList/Pods-EmployeeList.release.xcconfig"; sourceTree = "<group>"; };
 		79CD1231BF365B8E467C0041 /* Pods-EmployeeList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmployeeList.debug.xcconfig"; path = "Target Support Files/Pods-EmployeeList/Pods-EmployeeList.debug.xcconfig"; sourceTree = "<group>"; };
 		8C379D44583F36B69AA5B431 /* Pods_EmployeeList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmployeeList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				0BF8A9DE279C4FC300846568 /* EmployeesViewModel.swift */,
+				1763E40227B7F75600D37E45 /* AddEmployeesViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				0BF8A9DB279C40D300846568 /* EmployeeResponse.swift in Sources */,
 				0BF8A9D9279C3D0A00846568 /* EmployeeTableViewCell.swift in Sources */,
 				CDDA570927B7F83F0034EBA4 /* EmployeeListNewController.swift in Sources */,
+				1763E40327B7F75600D37E45 /* AddEmployeesViewModel.swift in Sources */,
 				0B4FEF5E27A071DA007A1FC0 /* EmployeeDetailsViewController.swift in Sources */,
 				0BB1247E27A818E500630A3A /* CollectionController.swift in Sources */,
 				0BF8A9DF279C4FC300846568 /* EmployeesViewModel.swift in Sources */,
