@@ -11,6 +11,7 @@ class ApiClient {
     
     struct Constants {
         static let baseUrl = "https://dummy.restapiexample.com/api/v1/"
+        static let addUrl = "https://dummy.restapiexample.com/api/v1/create"
     }
     
     struct Endpoint {
@@ -18,6 +19,7 @@ class ApiClient {
         static func employeeId(_ id: Int) -> String {
             return "employee/\(id)"
         }
+        static let create: String = "create"
     }
     
     func fetch(_ e: String, completion: @escaping ([Employee]?) -> Void) {
@@ -32,6 +34,26 @@ class ApiClient {
         fetchEmployeeData(url: url) { employee in
             DispatchQueue.main.async { completion(employee) }
         }
+    }
+    
+    func createNew(_ e: String, employee: Employee, completion: @escaping (Bool) -> Void) {
+        guard let url = URL(string: Constants.baseUrl + e) else {
+            completion(false)
+            return
+        }
+        let jsonData = try? JSONSerialization.data(withJSONObject: employee)
+        
+        var request = URLRequest(url: url)
+        request.httpBody = jsonData
+        request.httpMethod = "POST"
+        
+        URLSession.shared.dataTask(with: request) { data, response, err in
+            guard err == nil else {
+                completion(false)
+                return
+            }
+            completion(true)
+        }.resume()
     }
     
 }
