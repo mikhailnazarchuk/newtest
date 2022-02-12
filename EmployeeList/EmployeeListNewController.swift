@@ -11,6 +11,8 @@ import UIKit
 
 class EmployeeListNewController: UIViewController {
     
+    let viewModel = AddEmployeesViewModel()
+    
     private let idLabel = UILabel().then {
         $0.text = "Id"
         $0.translatesAutoresizingMaskIntoConstraints = false
@@ -71,5 +73,10 @@ class EmployeeListNewController: UIViewController {
         view.backgroundColor = .lightGray
         
         layout()
+    }
+    
+    func add() {
+        // guard let
+        viewModel.addEmployees(e: Employee(id: Int(idText.text), name: nameText.text, salary: salaryText.text, age: ageText.text))
     }
 }
